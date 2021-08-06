@@ -1,5 +1,5 @@
 import axios from "axios"
-const tabsContainer = document.querySelector('.tabs-container')
+// const tabsContainer = document.querySelector('.tabs-container')
 
 const Tabs = (topics) => {
   // TASK 3
@@ -41,6 +41,7 @@ const tabsAppender = (selector) => {
   // Append the tabs to the element in the DOM that matches the selector passed to the function.
   //
 
+  const tabsContainer = document.querySelector(selector)
   axios.get('http://localhost:5000/api/topics')
   .then(res => {
     const tabSelector = Tabs(res.data.topics)
