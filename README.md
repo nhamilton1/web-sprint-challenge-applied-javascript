@@ -30,16 +30,16 @@ In meeting the minimum viable product (MVP) specifications listed below, your pr
 
 ### Instructions
 
-- [ ] Navigate to the root of the project with your command line.
-- [ ] Run `npm install` to download the dependencies listed in the `package.json` file.
-- [ ] Run `npm start` to compile the project and serve it.
-- [ ] Navigate Chrome to `http://localhost:3000`
-- [ ] In a separate terminal, run `npm test` to run tests.
+- [x] Navigate to the root of the project with your command line.
+- [x] Run `npm install` to download the dependencies listed in the `package.json` file.
+- [x] Run `npm start` to compile the project and serve it.
+- [x] Navigate Chrome to `http://localhost:3000`
+- [x] In a separate terminal, run `npm test` to run tests.
 
 **Steps Required for MVP:**
 
-- [ ] Steps 1 and 2 are explained inside the `src/components/header.js` file.
-- [ ] Steps 3 and 4 are explained inside the `src/components/tabs.js` file.
+- [x] Steps 1 and 2 are explained inside the `src/components/header.js` file.
+- [x] Steps 3 and 4 are explained inside the `src/components/tabs.js` file.
 - [ ] Steps 5 and 6 are explained inside the `src/components/card.js` file.
 
 **Important Notes:**
@@ -53,19 +53,25 @@ In meeting the minimum viable product (MVP) specifications listed below, your pr
 
 ## Submission format
 
-- [ ] Submit via Codegrade by committing and pushing any new changes.
-- [ ] Create a pull request to merge `<firstName-lastName>` branch into `main`.
-- [ ] Please don't merge your own pull request and make sure **you are on your own repo**.
-- [ ] Check Codegrade for automated feedback.
-- [ ] Check Codegrade in the days following the Sprint Challenge for reviewer feedback.
-- [ ] Any changes pushed after the deadline will not receive any feedback.
+- [x] Submit via Codegrade by committing and pushing any new changes.
+- [x] Create a pull request to merge `<firstName-lastName>` branch into `main`.
+- [x] Please don't merge your own pull request and make sure **you are on your own repo**.
+- [x] Check Codegrade for automated feedback.
+- [x] Check Codegrade in the days following the Sprint Challenge for reviewer feedback.
+- [x] Any changes pushed after the deadline will not receive any feedback.
 
 ## Interview Questions
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What is the DOM?
+    DOM stands for Document Object Model. Which is an object representation of the HTML elements of a webpage. The DOM is kind of like a bridge between the content and the browser. The DOM is a language neutral API and his dynamic. The DOM is also built as a data structure known as a Tree. 
 2. What is an event?
+    Events are when the user does something, for instance on a webpage, and then the webpage respondes to the user's actions. For example, whenever something happens within the browser, when the user clicks or scrolls(too name a few), the browswer know's about it and generates an event object. 
 3. What is an event listener?
+    An event listener waits for an event to occur. The most frequent and easier one to remember is 'click'. Lets say you have a button on your page, you can add an addEventListener('click', event); to your button, and then make that event do something like change the color of the button to red on click. 
 4. Why would we convert a NodeList into an Array?
+    A NodeList is an object that is basically a collection of DOM nodes from an HTML document.
+    You convert a NodeList into an array so you can use ES6 synax, forEach, map, and filter (there are more).
 5. What is a component?
+    A component is made of serveral parts, HTML, CSS, or JS which is brought together for reuse in an application or website. Also, a component is D.R.Y. (do not repeat yourself).
