@@ -20,8 +20,9 @@ const Card = (article) => {
   // </div>
   //
 
-  console.log(article)
+  // console.log(article)
 
+  
   const divCard = document.createElement('div')
   const divHeadline = document.createElement('div')
   const divAuthor = document.createElement('div')
@@ -43,12 +44,12 @@ const Card = (article) => {
   divImgContainer.classList.add('img-container')
   
 
-  divHeadline.textContent = article[0].headline
-  divImg.setAttribute('src', article[0].authorPhoto)
-  divSpan.textContent = `By: ${article[0].authorName}`
+  divHeadline.textContent = article.headline
+  divImg.setAttribute('src', article.authorPhoto)
+  divSpan.textContent = `By: ${article.authorName}`
 
-  divCard.addEventListener('click', e => {
-    console.log(article[0].headline)
+  divCard.addEventListener('click', () => {
+    console.log(article.headline)
   })
 
 
@@ -70,9 +71,18 @@ const cardAppender = (selector) => {
   axios.get('http://localhost:5000/api/articles')
   .then(res => {
     // console.log(res.data.articles)
+    const cardBS = res.data.articles.bootstrap
+    const cardJS = res.data.articles.javascript
+    const cardJQ = res.data.articles.jquery
+    const cardNode = res.data.articles.node
+    const cardTech = res.data.articles.technology
+    const cardSelect = [...cardBS, ...cardJS, ...cardJQ, ...cardNode, ...cardTech]
 
-    const cardSelect = Card(res.data.articles.javascript)
-    cardContainer.append(cardSelect)
+    cardSelect.forEach(e => {
+      const cardSelect = Card(e)
+      cardContainer.append(cardSelect)
+    })
+    
     // res.data.articles.bootstrap.forEach(cardArticle => {
     // const cardSelect = Card(cardArticle)
     // cardContainer.append(cardSelect)
