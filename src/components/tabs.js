@@ -16,7 +16,7 @@ const Tabs = (topics) => {
   //   <div class="tab">technology</div>
   // </div>
   //
-  console.log(topics)
+  // console.log(topics)
   const divTopics = document.createElement('div')
   divTopics.classList.add('topics')
 
@@ -28,7 +28,7 @@ const Tabs = (topics) => {
     newDiv.textContent = ele
   });
 
-  console.log(divTopics)
+  // console.log(divTopics)
   return divTopics
 }
 
